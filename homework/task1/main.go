@@ -34,7 +34,8 @@ func main() {
 }
 
 func sum(sl []int) int {
-	sum := 0
+	var sum int
+	sum = 0
 	for _, v := range sl {
 		sum += v
 	}
