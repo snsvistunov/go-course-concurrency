@@ -23,6 +23,9 @@ func main() {
 		go func(ch chan int, v []int) {
 			ch <- sum(v)
 		}(ch, v)
+		
+	}
+	for range n {
 		buf := <-ch
 		res += int(buf)
 	}
